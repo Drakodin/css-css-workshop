@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Horizons 2022 CSS Workshop</title>
+        <link rel="icon" href="assets/lotus.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./css/slides.css">
+        <link rel="stylesheet" href="./css/grid.css">
+        <link rel="stylesheet" href="./css/examples.css">
+    </head>
+    <body>
+        <div id="root">
+            <div id="slides-root" class="on-slide-1">
+                <div class="slide slide-1">
+                    <div class="slide-grid grid-2">
+                        <div class="grid-pos-br">
+                            <h2 id="slide-1-title" class="slide-title">Cascades - For the Web</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-grid grid-2">
+                        <div class="grid-pos-top">
+                            <h2 class="slide-title">Intro and Logistics</h2>
+                        </div>
+                        <div class="grid-bullets">
+                            <ul>
+                                <li>
+                                    Who am I?
+                                </li>
+                                <li>
+                                    What's the topic?
+                                </li>
+                                <li>
+                                    Any starter code?
+                                </li>
+                                <li>
+                                    Surprise?
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-images">
+                            <div class="grid-img-solo grid-bubble">
+                                <img src="assets/lotus.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide-grid grid-2">
+                        <div class="grid-pos-top">
+                            <h2 class="slide-title">Cascades?</h2>
+                        </div>
+                        <div class="grid-bullets">
+                            <ul>
+                                <li>
+                                    Cascading Style Sheets (CSS)
+                                </li>
+                                <li>
+                                    Staple of all modern websites
+                                </li>
+                                <li>
+                                    Pretty? Usually.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-images">
+                            <div class="grid-img-solo">
+                                <img src="assets/CSS3_logo.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-4">
+                    <div class="slide-grid grid-2">
+                        <div class="grid-pos-top">
+                            <h2 class="slide-title">Colors!</h2>
+                        </div>
+                        <div class="grid-bullets">
+                            <ul>
+                                <li>
+                                   Two types: Backgrounds and Text 
+                                </li>
+                                <li>
+                                    Examples:
+                                    <ul>
+                                        <li>
+                                            color: <span style="color: purple;"><b>purple</b></span>
+                                        </li>
+                                        <li>
+                                            background-color: <span style="background-color: #300057; color: white">#300057</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Images can be backgrounds too!
+                                    <ul>
+                                        <li>url("filepath")</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Shortcut? Use only "background: . . . . ."
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-5">
+                    <div class="slide-grid grid-2">
+                        <div class="grid-pos-top">
+                            <h2 class="slide-title">Different Layouts</h2>
+                        </div>
+                        <div class="grid-bullets">
+                            <ul>
+                                <li>
+                                    Under the rule "display"
+                                </li>
+                                <li>
+                                    e.g. <span><emph>flex, grid, block</emph></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-images">
+                            <div class="example-wrapper">
+                                <div class="example-block">
+                                    <p>Block</p>
+                                    <p>Block</p>
+                                </div>
+                            </div>
+                            <div class="example-wrapper">
+                                <div class="example-flex">
+                                    <p>Flex</p>
+                                    <p>Flex</p>
+                                </div>
+                            </div>
+                            <div class="example-wrapper">
+                                <div class="example-grid">
+                                    <p>Grid</p>
+                                    <p>Grid</p>
+                                    <p>Grid</p>
+                                    <p>Grid</p>
+                                    <p>Grid</p>
+                                    <p>Grid</p>
+                                    <p>Grid</p>
+                                    <p>Grid</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-6">
+                    <div class="slide-grid grid-2">
+                        <div class="grid-pos-top">
+                            <h2 class="slide-title">Space Is Good</h2>
+                        </div>
+                        <div class="grid-bullets">
+                            <ul>
+                                <li>
+                                    Different rules for different reasons.
+                                </li>
+                                <li>
+                                    e.g. padding (inside), margin (outside)
+                                </li>
+                                <li>
+                                    Possible to control how boxes react.
+                                    <ul>
+                                        <li>
+                                            Special rule: "box-sizing"
+                                        </li>
+                                        <li>
+                                            "box-sizing: border-box" - Section size is fixed
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-images">
+                            <div class="example-wrapper">
+                                <div class="example-no-space">
+                                    No Space: (90%)
+                                </div>
+                            </div>
+                            <div class="example-wrapper">
+                                <div class="example-margin">
+                                    <p>Margins: (90% - 2(10%))</p>
+                                </div>
+                            </div>
+                            <div class="example-wrapper">
+                                <div class="example-padding">
+                                    Padding: (80% + 2(5%))
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-7">
+                    <div class="slide-grid grid-2">
+                        <div class="grid-pos-top">
+                            <h2 class="slide-title">Giving them Life (Without JS)</h2>
+                        </div>
+                        <div class="grid-comparison grid-comparison-left">
+                            Transitions
+                            <ul>
+                                <li>
+                                    Occurs once
+                                </li>
+                                <li>
+                                    Dependent on element changes
+                                </li>
+                                <li>
+                                    Specify rules, but not amounts
+                                </li>
+                                <li>
+                                    Cannot control frame-by-frame
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-comparison grid-comparison-right">
+                            Animations
+                            <ul>
+                                <li>
+                                    Can be repeated infinitely
+                                </li>
+                                <li>
+                                    Not tied to element changes
+                                </li>
+                                <li>
+                                    Specify rules and amounts they change
+                                </li>
+                                <li>
+                                    Can specify frames, percents, or timings
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-8">
+                    <div class="slide-grid grid-2">
+                        <div class="grid-pos-top">
+                            <h2 class="slide-title">Finally, Transformations!</h2>
+                        </div>
+                        <div class="grid-bullets">
+                            <ul>
+                                <li>
+                                    Using the rule: "transform"
+                                </li>
+                                <li>
+                                    Can be 2D or 3D
+                                </li>
+                                <li>
+                                    Types of Transformations
+                                    <ul>
+                                        <li>
+                                            Rotations - one axis, or multiple
+                                        </li>
+                                        <li>
+                                            Translations - one axis (X, Y, Z), or multiple
+                                        </li>
+                                        <li>
+                                            Scaling - one axis, multiple, or all
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Special Transformations
+                                    <ul>
+                                        <li>
+                                            "perspective"
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-images">
+                            <div class="example-wrapper">
+                                <div class="example-translate">
+                                    Translate
+                                </div>
+                            </div>
+                            <div class="example-wrapper">
+                                <div class="example-rotate">
+                                    Rotate
+                                </div>
+                            </div>
+                            <div class="example-wrapper">
+                                <div class="example-scale">
+                                    Scale
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>

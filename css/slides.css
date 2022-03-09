@@ -1,0 +1,137 @@
+#slides-root {
+    transform-style: preserve-3d;
+    position: relative;
+    width: var(--view-fs);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.show-slides {
+    transform: translateX(-50%) scale(0.25) rotateX(-15deg) !important; 
+    transition: transform 0.5s linear;
+    overflow: visible !important;
+}
+
+.slide {
+    user-select: none;
+    transform-style: preserve-3d;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    width: var(--view-fs);
+    height: 100vh;
+    transform-origin: center;
+    transition: transform 0.5s linear;
+    background-size: 200% 100%;
+    background-image: linear-gradient(90deg, #53bffd, #1c86ff, #53bffd, #97d9ff, #53bffd);
+    animation: ripple infinite linear 5s;
+}
+
+.slide-grid {
+    display: grid;
+    user-select: none;
+    width: 100%;
+    column-gap: 10%;
+}
+
+.slide-title {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding: 0px;
+    font-size: 3em;
+    font-family: 'ElMessiri';
+}
+
+#slide-1-title {
+    font-style: oblique;
+    font-size: 3.2em;
+    text-decoration: underline;
+    margin-left: 3.5%;
+}
+
+.slide-1 {
+    transform: translateZ(calc(var(--view-fs)/2 + (var(--view-fs) / var(--sqrt-two))));
+    
+}
+
+.slide-2 {
+    transform: rotateY(45deg) translateZ(calc(var(--view-fs)/2 + (var(--view-fs) / var(--sqrt-two))));
+}
+
+.slide-3 {
+    transform: rotateY(90deg) translateZ(calc(var(--view-fs)/2 + (var(--view-fs) / var(--sqrt-two))));
+}
+
+.slide-4 {
+    transform: rotateY(135deg) translateZ(calc(var(--view-fs)/2 + (var(--view-fs) / var(--sqrt-two))));
+}
+
+.slide-5 {
+    transform: rotateY(-180deg) translateZ(calc(var(--view-fs)/2 + (var(--view-fs) / var(--sqrt-two))));
+}
+
+.slide-6 {
+    transform: rotateY(-135deg) translateZ(calc(var(--view-fs)/2 + (var(--view-fs) / var(--sqrt-two))));
+}
+
+.slide-7 {
+    transform: rotateY(-90deg) translateZ(calc(var(--view-fs)/2 + (var(--view-fs) / var(--sqrt-two))));
+}
+
+.slide-8 {
+    transform: rotateY(-45deg) translateZ(calc(var(--view-fs)/2 + (var(--view-fs) / var(--sqrt-two))));
+}
+
+.on-slide-1 {
+    transform: rotateY(0deg);
+    transition: transform 0.25s ease-in-out;
+}
+
+.on-slide-2 {
+    transform: rotateY(-45deg);
+    transition: transform 0.25s ease-in-out;
+}
+
+.on-slide-3 {
+    transform: rotateY(-90deg);
+    transition: transform 0.25s ease-in-out;
+}
+
+.on-slide-4 {
+    transform: rotateY(-135deg);
+    transition: transform 0.25s ease-in-out;
+}
+
+.on-slide-5 {
+    transform: rotateY(-180deg);
+    transition: transform 0.25s ease-in-out;
+}
+
+.on-slide-6 {
+    transform: rotateY(-225deg);
+    transition: transform 0.25s ease-in-out;
+}
+
+.on-slide-7 {
+    transform: rotateY(-270deg);
+    transition: transform 0.25s ease-in-out;
+}
+
+.on-slide-8 {
+    transform: rotateY(-315deg);
+    transition: transform 0.25s ease-in-out;
+}
+
+@keyframes ripple {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 100%;
+    }
+}

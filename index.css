@@ -1,0 +1,28 @@
+:root {
+    --sqrt-two: 1.4142135;
+    --view-fs: 100vw;
+}
+
+body {
+    margin: 0;
+    height: 100vh
+}
+
+#root {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-style: preserve-3d;
+}
+
+@font-face {
+    font-family: 'ElMessiri';
+    src: url('./css/fonts/El_Messiri/ElMessiri-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./css/fonts/Roboto/Roboto-Regular.ttf');
+}
